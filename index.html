@@ -174,7 +174,7 @@
       </div>
       <div class="row">
         <div class="col offset-lg-2 col-lg-8 offset-md-1 col-md-10 col-sm-12">
-          <form>
+          <form id="miFormulario">
             <div class="row">
               <div class="form-group col-12 col-sm-6">
                 <input type="text" class="form-control" placeholder="Nombre">
@@ -194,7 +194,7 @@
             </div>
             <div class="row">
               <div class="col">
-                <button type="button" name="button" class="btn btn-platzi btn-block">Enviar</button>
+                <button type="button" name="button" class="btn btn-platzi btn-block" onclick="getDataInfo()">Enviar</button>
               </div>
             </div>
           </form>
@@ -267,12 +267,21 @@
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-            <button type="button" class="btn btn-primary btn-platzi">Guardar y Enviar</button>
+            <button type="button" class="btn btn-primary btn-platzi" data-dismiss="modal">Guardar y Enviar</button>
           </div>
         </div>
       </div>
     </div>
   <!-- /modal -->
+
+  <!-- Modal de gracias -->
+<dialog id="modalGracias" style="padding: 20px; border-radius: 8px; border: none; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+    <h2>¡Super!</h2>
+    <p>¡Agradecemos tu participación!</p>
+    <button class="btn btn-platzi btn-block" onclick="document.getElementById('modalGracias').close()">Cerrar</button>
+</dialog>
+  <!-- Modal de gracias -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
