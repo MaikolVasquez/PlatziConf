@@ -4,15 +4,15 @@ $(function () {
 
 
 // Formulario de envio
-const miFormulario = document.getElementById('miFormulario');
-function getDataInfo() {
+// const miFormulario = document.getElementById('miFormulario');
+// function getDataInfo() {
 
-  miFormulario.reset();
+//   miFormulario.reset();
 
-  modal_gracias = document.getElementById('modalGracias')
+//   modal_gracias = document.getElementById('modalGracias')
 
-  modal_gracias.showModal();
+//   modal_gracias.showModal();
 
-}
+// }
 
 
